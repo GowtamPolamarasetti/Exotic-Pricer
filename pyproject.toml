@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exotic_engine"
+version = "0.1.0"
+description = "A pricing engine for exotic derivatives."
+authors = [{ name = "Gowtam Polamarasetti", email = "gowtampolamarasetti@gmail.com" }]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.23.0",
+    "scipy>=1.9.0",
+    "matplotlib>=3.9",
+    "pandas",
+    
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+    "black",
+    "jupyter"
+]
